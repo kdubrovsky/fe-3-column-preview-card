@@ -1,8 +1,8 @@
 # Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-).
 
-[Live Site URL](https://fe-product-preview-card.vercel.app/)
+<!-- [Live Site URL]() -->
 
 ### Built with
 
@@ -10,6 +10,4 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - BEM methodology
 - SCSS
 - Flexbox
-- CSS Grid
-- Relative font sizes and dimensions
 - [Vite](https://vitejs.dev/) Tooling
