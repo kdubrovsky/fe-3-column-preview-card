@@ -3,5 +3,93 @@
 body {
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
+    line-height: 1.667;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 840px) {
+        align-items: flex-start;
+    }
+}
+
+.btn {
+    padding: 9px 30px 10px;
+    background-color: colors.$light-gray;
+    border: 2px solid colors.$light-gray;
+    border-radius: 25px;
+    color: currentColor;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: colors.$white;
+        border-color: colors.$white;
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 768px;
+    max-width: 920px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 40px;
+    
+
+    @media (max-width: 840px) {
+        grid-template-columns: 1fr;
+        max-width: 640px;
+        min-width: initial;
+        margin: 24px;
+    }
+
+    &__item {
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-repeat: no-repeat;
+        background-position: 48px 48px;
+        background-color: currentColor;
+
+        @media (max-width: 840px) {
+            justify-content: flex-start;
+        }
+
+        &--sedans {
+            color: colors.$orange;
+            background-image: url("/images/icon-sedans.svg");
+        }
+        &--suvs {
+            color: colors.$dark-cyan;
+            background-image: url("/images/icon-suvs.svg");
+        }
+        &--luxury {
+            color: colors.$very-dark-cyan;
+            background-image: url("/images/icon-luxury.svg");
+        }
+    }
+
+    &__item-title {
+        font-family: "Big Shoulders Display", Impact, sans-serif;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 1.2;
+        margin-top: 75px;
+        margin-bottom: 25px;
+        color: colors.$white;
+    }
+
+    &__item-description {
+        padding-bottom: 83px;
+        color: colors.$transparent-white;
+
+        @media (max-width: 840px) {
+            padding-bottom: 25px;
+        }
+    }
 }
